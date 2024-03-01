@@ -61,10 +61,7 @@ const Project = () => {
             updates on number of reps for each activity.
           </p>
         </div>
-        <div
-          href="https://budget-website-eight.vercel.app/"
-          className="w-[500px] flex-col p-10 bg-slate-600  rounded-xl my-8 mx-2 hover:scale-105 cursor-pointer duration-500 "
-        >
+        <div className="w-[500px] flex-col p-10 bg-slate-600  rounded-xl my-8 mx-2 hover:scale-105 cursor-pointer duration-500 ">
           <h1 className="text-2xl hover:scale-105 flex justify-center font-bold text-gray-300 duration-500">
             Budget Buddy
           </h1>
@@ -85,6 +82,12 @@ const Project = () => {
             Utilized Tailwind framework, HTML, and CSS to develop a fully
             responsive website, optimized for user engagement.
           </p>
+          <button
+            href="https://budget-website-eight.vercel.app/"
+            className="text-black"
+          >
+            Visit
+          </button>
         </div>
       </div>
       <Footer />
