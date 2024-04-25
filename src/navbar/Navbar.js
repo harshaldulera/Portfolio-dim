@@ -14,9 +14,9 @@ const Navbar = () => {
             <li class="hover:scale-105 duration-500 p-4 border-b-2 border-green-500 border-opacity-0  hover:border-opacity-100 hover:text-green-100  cursor-pointer active">
               <Link to="/">HOME</Link>
             </li>
-            {/* <li class="hover:scale-105 duration-500  p-4 border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-gray-900  cursor-pointer">
+            <li class="hover:scale-105 duration-500  p-4 border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-gray-900  cursor-pointer">
               <Link to="/about">ABOUT</Link>
-            </li> */}
+            </li>
             <li class="hover:scale-105 duration-500  p-4 border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-gray-900  cursor-pointer">
               <Link to="/project">PROJECT</Link>
             </li>
