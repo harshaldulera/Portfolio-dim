@@ -11,7 +11,7 @@ const Navbar = () => {
       <header class="bg-slate-800 header sticky top-0  shadow-md flex items-center justify-center px-8 py-02">
         <nav class="nav font-semibold text-lg  ">
           <ul class="flex items-center text-white active:text-gray-400">
-            <li class="hover:scale-105 duration-500 p-4 border-b-2 border-green-500 border-opacity-0  hover:border-opacity-100 hover:text-gray-900  cursor-pointer active">
+            <li class="hover:scale-105 duration-500 p-4 border-b-2 border-green-500 border-opacity-0  hover:border-opacity-100 hover:text-green-100  cursor-pointer active">
               <Link to="/">HOME</Link>
             </li>
             {/* <li class="hover:scale-105 duration-500  p-4 border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-gray-900  cursor-pointer">
