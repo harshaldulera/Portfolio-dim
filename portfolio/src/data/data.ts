@@ -27,3 +27,8 @@ export const navbar = {
     ],
     name: "@Aarriiiii",
 }
+
+export const home = {
+    title: "Aarya",
+    description: "I am a Full Stack Developer",
+}

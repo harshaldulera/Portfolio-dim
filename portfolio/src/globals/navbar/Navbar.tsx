@@ -13,6 +13,19 @@ export interface NavbarProps {
   name: string;
 }
 
+interface ButtonProps {
+  className: string;
+  title: string;
+}
+
+export const CustomButton = (props: ButtonProps) => (
+  <div className="rounded-3xl p-px transition-all duration-400 ease-in-out bg-gradient-to-r from-yellow-200 via-red-200 to-red-200 flex justify-center items-center hover:bg-gradient-to-l">
+    <Button className="rounded-3xl transition-all duration-1000 ease-in-out bg-gradient-to-r from-blue-200 via-red-200 to-yellow-200 text-black hover:bg-gradient-to-l">
+      {props.title}
+    </Button>
+  </div>
+);
+
 export default function Navbar(props: NavbarProps) {
   return (
     <div className="relative bg-transparent w-full py-4 px-10 flex justify-between items-center gap-24">
@@ -24,19 +37,18 @@ export default function Navbar(props: NavbarProps) {
         <div className="p-2 bg-background rounded-3xl text-white flex justify-center items-center">
           {props.links.map((link) => (
             <Link href={`/${link.link}`} key={link.link}>
-              <p className="text-white px-4 py-2">{link.name}</p>
+              <p className="text-white px-4 py-2 transition-all duration-300 hover:text-blue-200">{link.name}</p>
             </Link>
           ))}
         </div>
       </div>
       <div className="flex justify-center items-center gap-10">
-        <div className="rounded-3xl p-px bg-gradient-to-r from-yellow-200 via-red-200 to-red-200 flex justify-center items-center">
-          <Button className="rounded-3xl bg-gradient-to-r from-blue-200 via-red-200 to-yellow-200 text-black">
-            Hire Me
-          </Button>
-        </div>
+        <CustomButton className="" title="Hire Me" />
         <div className="rounded-3xl p-px bg-gradient-to-r from-yellow-200 via-red-200 to-red-200">
-          <UserRound size={36} className="p-2 rounded-3xl bg-gradient-to-r from-blue-200 via-red-200 to-yellow-200 text-black" />
+          <UserRound
+            size={36}
+            className="p-2 rounded-3xl bg-gradient-to-r from-blue-200 via-red-200 to-yellow-200 text-black hover:bg-gradient-to-l cursor-pointer transition-all duration-300 ease-in-out"
+          />
         </div>
       </div>
     </div>

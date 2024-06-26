@@ -83,3 +83,10 @@
     @apply bg-background text-foreground;
   }
 }
+
+.bg-image {
+  background-image: url('../../public/hero1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
