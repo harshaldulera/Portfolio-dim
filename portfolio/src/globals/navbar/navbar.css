@@ -1,0 +1,12 @@
+.gradient-border {
+    border: 3px solid;
+    border-image: linear-gradient(90deg, #7A87FB 0%, #FFD49C 100%);
+    border-image-slice: 1;
+}
+
+.button-border {
+    border: 2px solid;
+    border-image: linear-gradient(90deg, #7A87FB 0%, #FFD49C 100%);
+    border-image-slice: 1;
+    background-color: linear-gradient(90deg, #FFD49C 0%, #7A87FB 100%);
+}
