@@ -14,13 +14,14 @@ export interface NavbarProps {
 }
 
 interface ButtonProps {
-  className: string;
+  innerClassName: string;
+  outerClassName: string;
   title: string;
 }
 
 export const CustomButton = (props: ButtonProps) => (
-  <div className="rounded-3xl p-px transition-all duration-400 ease-in-out bg-gradient-to-r from-yellow-200 via-red-200 to-red-200 flex justify-center items-center hover:bg-gradient-to-l">
-    <Button className="rounded-3xl transition-all duration-1000 ease-in-out bg-gradient-to-r from-blue-200 via-red-200 to-yellow-200 text-black hover:bg-gradient-to-l">
+  <div className={`rounded-3xl  p-px transition-all duration-400 ease-in-out bg-gradient-to-r from-yellow-200 via-red-200 to-red-200 flex justify-center items-center hover:bg-gradient-to-l ${props.outerClassName}`}>
+    <Button className={`rounded-3xl transition-all duration-1000 ease-in-out bg-gradient-to-r from-blue-200 via-red-200 to-yellow-200 text-black hover:bg-gradient-to-l ${props.innerClassName}`}>
       {props.title}
     </Button>
   </div>
@@ -43,7 +44,7 @@ export default function Navbar(props: NavbarProps) {
         </div>
       </div>
       <div className="flex justify-center items-center gap-10">
-        <CustomButton className="" title="Hire Me" />
+        <CustomButton innerClassName="" outerClassName="" title="Hire Me" />
         <div className="rounded-3xl p-px bg-gradient-to-r from-yellow-200 via-red-200 to-red-200">
           <UserRound
             size={36}
