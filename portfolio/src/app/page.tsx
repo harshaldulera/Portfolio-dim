@@ -7,6 +7,7 @@ import { ProjectCard } from "@/globals/project-card/ProjectCard";
 import { projects } from "@/data/data";
 import { ClientCard } from "@/globals/client-card/ClientCard";
 import { clients } from "@/data/data";
+import { SkillProps } from "./skills/page";
 
 interface HeadingProps {
   title: string;
@@ -20,14 +21,10 @@ export const Heading = (props: HeadingProps) => (
   </div>
 );
 
-export interface SkillProps {
-  item: any[];
-}
-
-export const Skill = (props: { image: any; title: string }) => (
-  <div className="flex flex-col items-center justify-center gap-3">
+export const Skill = (props: SkillProps) => (
+  <div className="flex transition-all ease-in-out duration-500 flex-col items-center text-white justify-center gap-3 px-10 py-6 rounded-3xl hover:text-blue-900 hover:bg-blue-200">
     <Image src={props.image} alt="Skill" width={100} height={100} />
-    <p className="text-white text-2xl">{props.title}</p>
+    <p className="text-2xl">{props.name}</p>
   </div>
 );
 
@@ -50,9 +47,9 @@ export default function Home() {
       <div className="flex flex-col p-10 my-10 align-center items-center justify-center">
         <Heading title="My Top Skills" image="/portal.svg" />
         <div className="grid grid-cols-1 md:grid-cols-2 mt-10 lg:grid-cols-3 lg:gap-24 md:gap-12 w-full justify-center">
-          {skills.map((skill) => (
+          {skills.slice(0, 12).map((skill) => (
             <Link href={skill.link}>
-              <Skill key={skill.name} image={skill.image} title={skill.name} />
+              <Skill key={skill.name} image={skill.image} name={skill.name} type={skill.type} link={skill.link} />
             </Link>
           ))}
         </div>
@@ -132,6 +129,7 @@ export default function Home() {
           />
         </div>
       </div>
+      <p className="text-center text-3xl text-white">Thanks for scrolling</p>
     </div>
   );
 }

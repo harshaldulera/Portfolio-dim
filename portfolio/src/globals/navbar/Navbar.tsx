@@ -29,7 +29,7 @@ export const CustomButton = (props: ButtonProps) => (
 
 export default function Navbar(props: NavbarProps) {
   return (
-    <div className="relative bg-transparent w-full py-4 px-10 flex justify-between items-center gap-24">
+    <div className="relative bg-transparent w-full py-6 px-12 flex justify-between items-center gap-24">
       <div className="flex gap-2 items-center">
         <Image src={props.logo} alt={props.title} width={25} height={25} />
         <h1 className="text-white">{props.name}</h1>
