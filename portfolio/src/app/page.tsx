@@ -31,7 +31,7 @@ export const Skill = (props: SkillProps) => (
 export default function Home() {
   return (
     <div className="relative">
-      <div className="bg-image w-full h-screen text-white flex justify-center items-center flex-col gap-10">
+      <div className="bg-hero w-full h-screen text-white flex justify-center items-center flex-col gap-10">
         <h1>
           <span className="text-4xl hover:text-blue-200 transition-colors duration-300 cursor-pointer">
             Hi, I am Aarya Tiwari
@@ -46,7 +46,7 @@ export default function Home() {
       </div>
       <div className="flex flex-col p-10 my-10 align-center items-center justify-center">
         <Heading title="My Top Skills" image="/portal.svg" />
-        <div className="grid grid-cols-1 md:grid-cols-2 mt-10 lg:grid-cols-3 lg:gap-24 md:gap-12 w-full justify-center">
+        <div className="my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-24 md:gap-12 w-full place-items-center">
           {skills.slice(0, 12).map((skill) => (
             <Link href={skill.link}>
               <Skill key={skill.name} image={skill.image} name={skill.name} type={skill.type} link={skill.link} />

@@ -84,9 +84,18 @@
   }
 }
 
-.bg-image {
+.bg-hero {
   background-image: url('../../public/hero1.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.moving {
+  background-image: url('../../public/about-me.jpg');
+  background-size: cover;
+  transition: all 0.8s ease-in-out;
+  width: 100%;
+  height: 90vh;
+}
+
