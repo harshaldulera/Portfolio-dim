@@ -100,7 +100,7 @@ export default function Home() {
           }}
           className="w-full my-10 flex lg:justify-between justify-center gap-10 lg:flex-nowrap flex-wrap lg:items-start items-center"
         >
-          {projects.map((project, index) => (
+          {projects.slice(0,3).map((project, index) => (
             <motion.div key={project.name} variants={{ hidden: { opacity: 0, x: -50 }, visible: { opacity: 1, x: 0 } }}>
               <ProjectCard
                 name={project.name}
