@@ -23,7 +23,7 @@ export default function Home() {
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
-          className="lg:text-4xl text-2xl hover:text-blue-200 transition-colors duration-300 cursor-pointer"
+          className="lg:text-4xl text-2xl hover:text-blue-200 transition-colors duration-300 cursor-pointer text-center"
         >
           Hi, I am Aarya Tiwari
         </motion.h1>
@@ -31,7 +31,7 @@ export default function Home() {
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="lg:text-2xl text-lg hover:text-blue-200 transition-colors duration-300 cursor-pointer"
+          className="lg:text-2xl text-lg hover:text-blue-200 transition-colors duration-300 cursor-pointer text-center"
         >
           A passionate Software Engineer and Full-Stack Developer
         </motion.span>
