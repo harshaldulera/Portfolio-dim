@@ -47,7 +47,7 @@ export const ClientCard = (props: ClientProps) => {
           </div>
         </CardHeader>
         <CardContent>
-          <p>"{props.comment}"</p>
+          <p>{props.comment}</p>
         </CardContent>
       </Card>
     </div>

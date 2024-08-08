@@ -47,9 +47,9 @@ export default function Home() {
       <div className="flex flex-col p-10 my-10 align-center items-center justify-center">
         <Heading title="My Top Skills" image="/portal.svg" />
         <div className="my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-24 md:gap-12 w-full place-items-center">
-          {skills.slice(0, 12).map((skill) => (
-            <Link href={skill.link}>
-              <Skill key={skill.name} image={skill.image} name={skill.name} type={skill.type} link={skill.link} />
+          {skills.slice(0, 12).map((skill , index) => (
+            <Link href={skill.link} key={index}>
+              <Skill image={skill.image} name={skill.name} type={skill.type} link={skill.link} />
             </Link>
           ))}
         </div>
@@ -111,7 +111,7 @@ export default function Home() {
           <div className="flex flex-col lg:items-start sm:items-center xs:items-center gap-3 max-w-[500px] xs:text-center sm:gap-6">
             <h1 className="text-5xl text-white text-center w-full">Wanna Hire Me?</h1>
             <p className="text-white text-lg">
-              I am available for hire. Let's work together and make something
+              I am available for hire. Lets work together and make something
               great.
             </p>
             <CustomButton
