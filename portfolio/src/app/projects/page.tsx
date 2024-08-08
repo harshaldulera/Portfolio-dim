@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 export default function Projects() {
   return (
     <div className="flex flex-col items-center mt-10 lg:p-0 p-3">
-      <Heading title="My Top Projects" image="/portal.svg" />
+      <Heading title="My Projects" image="/portal.svg" />
       <motion.div
         className="w-full my-10 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 p-5"
         initial="hidden"

@@ -175,7 +175,6 @@ export const skills = [
     type: "programming",
   },
 ];
-
 export const projects = [
   {
     name: "Sahyog - A Refined Healthcare Associate",
@@ -199,25 +198,34 @@ export const projects = [
     github: "https://github.com/AaryaTiwari1211/file-nest",
     hosted_link: "file-next-five.vercel.app",
     description:
-      "File-Nest offers a wide range of features including file sharing in organizations , file storage and access control for many supported file extensions like PDF , DOCX , Images , CSV etc.",
+      "File-Nest offers a comprehensive solution for file management, including file sharing within organizations, secure storage, and access control for various file types like PDFs, DOCX, images, and CSVs.",
   },
   {
     name: "My Portfolio",
     image: "/portfolio.png",
-    github: "https://github.com/AaryaTiwari1211/file-nest",
+    github: "https://github.com/AaryaTiwari1211/Portfolio",
     hosted_link: "aarya-tiwari1211.vercel.app",
     description:
-      "File-Nest offers a wide range of features including file sharing in organizations , file storage and access control for many supported file extensions like PDF , DOCX , Images , CSV etc.",
+      "This is my personal portfolio website, showcasing my projects, skills, and experiences as a Software and Full-Stack Developer.",
   },
   {
     name: "Interactive Quiz Hub - Quizio",
     image: "/quizio.png",
-    github: "https://github.com/AaryaTiwari1211/file-nest",
-    hosted_link: "file-next-five.vercel.app",
+    github: "https://github.com/AaryaTiwari1211/Quiz-App-React",
+    hosted_link: "quizio-aari.vercel.app",
     description:
-      "File-Nest offers a wide range of features including file sharing in organizations , file storage and access control for many supported file extensions like PDF , DOCX , Images , CSV etc.",
+      "Quizio is an interactive quiz platform built with React, offering users a dynamic and engaging quiz experience.",
+  },
+  {
+    name: "Electra Enterprises - Website",
+    image: "/electra.png",
+    github: "https://github.com/AaryaTiwari1211/Electra_Website",
+    hosted_link: "electra-main.netlify.app",
+    description:
+      "This is the official website for Electra Enterprises, featuring information about their products and services in the electronics industry.",
   },
 ];
+
 
 export const clients = [
   {
