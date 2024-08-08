@@ -34,10 +34,10 @@ export default function Navbar(props: NavbarProps) {
         <Image src={props.logo} alt={props.title} width={25} height={25} />
         <h1 className="text-white">{props.name}</h1>
       </div>
-      <div className="rounded-3xl p-px bg-gradient-to-r from-blue-200 via-red-200 to-yellow-200 flex justify-center items-center hover:bg-gradient-to-l">
+      <div className="rounded-3xl p-px bg-gradient-to-r from-blue-200 via-red-200 to-yellow-200 lg:flex sm:hidden xs:hidden justify-center items-center hover:bg-gradient-to-l ">
         <div className="p-2 bg-background rounded-3xl text-white flex justify-center items-center transition-all duration-300">
-          {props.links.map((link) => (
-            <Link href={`/${link.link}`} key={link.link}>
+          {props.links.map((link , index) => (
+            <Link href={`/${link.link}`} key={index}>
               <p className="text-white px-4 py-2 transition-all duration-300 hover:text-blue-200">{link.name}</p>
             </Link>
           ))}
@@ -45,12 +45,6 @@ export default function Navbar(props: NavbarProps) {
       </div>
       <div className="flex justify-center items-center gap-10">
         <CustomButton innerClassName="" outerClassName="" title="Hire Me" />
-        <div className="rounded-3xl p-px bg-gradient-to-r from-yellow-200 via-red-200 to-red-200">
-          <UserRound
-            size={36}
-            className="p-2 rounded-3xl bg-gradient-to-r from-blue-200 via-red-200 to-yellow-200 text-black hover:bg-gradient-to-l cursor-pointer transition-all duration-300 ease-in-out"
-          />
-        </div>
       </div>
     </div>
   );

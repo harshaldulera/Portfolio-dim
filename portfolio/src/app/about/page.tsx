@@ -70,7 +70,7 @@ export default function AboutMe() {
               key={index}
               className="flex flex-col justify-center items-center gap-3"
             >
-              <Link href={link.link}>
+              <Link href={link.link} onClick={link.click}>
                 <Image
                   src={link.image}
                   alt={link.name}

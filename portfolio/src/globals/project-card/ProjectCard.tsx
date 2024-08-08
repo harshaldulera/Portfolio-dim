@@ -25,12 +25,12 @@ export const ProjectCard = (props: ProjectProps) => {
 
   return (
     <div className="flex w-full justify-center items-center">
-      <Card className="relative w-full bg-background border-none rounded-3xl max-w-[600px] transition-all duration-800 cursor-pointer overflow-hidden hover:scale-105">
+      <Card className="relative w-full bg-background border-none rounded-3xl max-w-[500px] transition-all duration-800 cursor-pointer overflow-hidden hover:scale-105">
         <div className="absolute inset-0 flex items-center justify-center gap-4 text-white text-xl opacity-0 bg-black bg-opacity-50 hover:opacity-100 transition-opacity duration-300">
-          <Link href={props.github}>
+          <Link href={props.github} target="_blank" rel="noopener noreferrer">
             <Github size={36} />
           </Link>
-          <Link href={props.hosted_link}>
+          <Link href={props.hosted_link} target="_blank" rel="noopener noreferrer">
             <LinkIcon size={36} />
           </Link>
         </div>
@@ -46,10 +46,10 @@ export const ProjectCard = (props: ProjectProps) => {
             />
           </Link>
         </CardHeader>
-        <CardContent className="text-white text-2xl m-1 px-4 py-2">
+        <CardContent className="text-white text-2xl m-1 px-4 py-4">
           <p>{props.name}</p>
         </CardContent>
-        <CardFooter className="text-lg text-white m-0 px-4 py-2">
+        <CardFooter className="text-lg text-gray-400 m-1 px-4 py-4">
             {props.description}
         </CardFooter>
       </Card>

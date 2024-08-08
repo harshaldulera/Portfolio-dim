@@ -1,12 +1,22 @@
 import { link } from "fs";
 
+const onButtonClick = () => {
+  const pdfUrl = "/Aarya_Tiwari.pdf";
+  const link = document.createElement("a");
+  link.href = pdfUrl;
+  link.download = "Aarya_Tiwari_Resume.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
+
 export const navbar = {
   logo: "/logo.svg",
   title: "Aarya",
   links: [
     {
       name: "Home",
-      link: "home",
+      link: "/",
     },
     {
       name: "About",
@@ -22,7 +32,7 @@ export const navbar = {
     },
     {
       name: "Experience",
-      link: "projects",
+      link: "experience",
     },
     {
       name: "Contact Me",
@@ -168,46 +178,28 @@ export const skills = [
 
 export const projects = [
   {
-    name: "Project 1",
-    image: "/hero1.jpg",
-    github: "https://github.com",
-    hosted_link: "https://github.com",
-    description: "This is a project",
+    name: "Sahyog - A Refined Healthcare Associate",
+    image: "/sahyog.png",
+    github: "https://github.com/AaryaTiwari1211/Sahyog_Healthcare",
+    hosted_link: "sahyog-healthcare.vercel.app",
+    description:
+      "SAHYOG is a decentralized healthcare ecosystem in India, offering a unique health identity card, AI-driven consultations, task management, emergency SOS, and blockchain security for user data protection.",
   },
   {
-    name: "Project 2",
-    image: "/hero1.jpg",
-    github: "https://github.com",
-    hosted_link: "https://github.com",
-    description: "This is a project",
+    name: "FileTask-AI : A Powerful Document Chat Bot",
+    image: "/filetask-ai.png",
+    github: "https://github.com/AaryaTiwari1211/filetask-ai",
+    hosted_link: "https://filetask-ai.vercel.app/",
+    description:
+      "FileTask AI allows interaction with PDFs, Word documents, and PowerPoint presentations through an AI-powered chat interface.",
   },
   {
-    name: "Project 3",
-    image: "/hero1.jpg",
-    github: "https://github.com",
-    hosted_link: "https://github.com",
-    description: "This is a project",
-  },
-  {
-    name: "Project 4",
-    image: "/hero1.jpg",
-    github: "https://github.com",
-    hosted_link: "https://github.com",
-    description: "This is a project",
-  },
-  {
-    name: "Project 5",
-    image: "/hero1.jpg",
-    github: "https://github.com",
-    hosted_link: "https://github.com",
-    description: "This is a project",
-  },
-  {
-    name: "Project 6",
-    image: "/hero1.jpg",
-    github: "https://github.com",
-    hosted_link: "https://github.com",
-    description: "This is a project",
+    name: "File Nest : The Next Gen File Manager",
+    image: "/filenest.png",
+    github: "https://github.com/AaryaTiwari1211/file-nest",
+    hosted_link: "file-next-five.vercel.app",
+    description:
+      "File-Nest offers a wide range of features including file sharing in organizations , file storage and access control for many supported file extensions like PDF , DOCX , Images , CSV etc.",
   },
 ];
 
@@ -268,24 +260,88 @@ export const about = [
 ];
 
 export const aboutLinks = [
-    {
-        name: "LinkedIn",
-        link: "https://www.linkedin.com/in/aarya-tiwari-2b4b1b1b0/",
-        image: "/socials/linkedin.svg",
-    },
-    {
-        name: "GitHub",
-        link:  "https://github.com/AaryaTiwari1211",
-        image: "/socials/github.svg",
-    },
-    {
-        name: "Resume",
-        link: "/",
-        image: "/socials/resume.svg",
-    },
-    {
-        name: "Email",
-        link: "mailto:aarya.tiwari@somaiya.edu",
-        image: "/socials/mail.svg",
-    },
-]
+  {
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/in/aarya-tiwari-142a01224/",
+    image: "/socials/linkedin.svg",
+    click: () => {},
+  },
+  {
+    name: "GitHub",
+    link: "https://github.com/AaryaTiwari1211",
+    image: "/socials/github.svg",
+    click: () => {},
+  },
+  {
+    name: "Resume",
+    link: "/",
+    image: "/socials/resume.svg",
+    click: onButtonClick,
+  },
+  {
+    name: "Email",
+    link: "mailto:aarya.tiwari@somaiya.edu",
+    image: "/socials/mail.svg",
+    click: () => {},
+  },
+];
+
+export const experience = [
+  {
+    title: "Roni Analytics - Remote Mumbai",
+    cardTitle: "Full Stack Development Intern",
+    cardSubtitle:
+      "Worked with real-time data involving Cryptocurrency and developing SQL Queries for fetching related data. Implemented Technologies like PostGresSQL, React TypeScript, Docker, AWS, and more...",
+    cardDetailedText:
+      "During my internship at Roni Analytics, I was responsible for building and optimizing applications that processed real-time cryptocurrency data. I collaborated with the backend team to design efficient SQL queries and leveraged technologies like React TypeScript, Docker, and AWS to deliver scalable solutions.",
+  },
+  {
+    title: "Electra Enterprises",
+    cardTitle: "Frontend Developer",
+    cardSubtitle:
+      "Worked on the frontend of the company's website and implemented new features. Implemented Technologies like React, Tailwind CSS, and more...",
+    cardDetailedText:
+      "At Electra Enterprises, I focused on enhancing the user interface of the company's website. I developed and integrated new features using React and Tailwind CSS, ensuring a seamless user experience. My contributions helped in improving site performance and user engagement.",
+  },
+  {
+    title: "KJ Somaiya College of Engineering",
+    cardTitle: "Full Stack Developer",
+    cardSubtitle:
+      "Developed a Full Stack Application that extracts keywords from a given document, text, or PDF. Implemented Technologies like Django, Django Templates",
+    cardDetailedText:
+      "In this project, I developed a full-stack application for keyword extraction from documents and PDFs. Using Django, I built a robust backend, and Django Templates were used for rendering the frontend. The tool efficiently processed documents and delivered accurate keyword results.",
+  },
+  {
+    title: "RIIDL (Research Innovation Incubation Design Lab)",
+    cardTitle: "Maker Relations Executive",
+    cardSubtitle:
+      "My Role as a Maker Relations Executive included managing the makerspace and helping students with their projects. I also conducted workshops and events for the students. I also invited 35+ makers into the event Maker Mela 2022",
+    cardDetailedText:
+      "As a Maker Relations Executive at RIIDL, I managed the makerspace, provided guidance to students on their projects, and organized workshops to foster innovation. Additionally, I played a key role in coordinating Maker Mela 2022, inviting over 35 makers to showcase their creations.",
+  },
+  {
+    title: "KJ Somaiya College of Engineering",
+    cardTitle: "Student",
+    cardSubtitle:
+      "Studied Core Subjects like Data Structures and Algorithms, Object Oriented Programming, Database Management Systems, Operating Systems, Computer Networks, and more. Maintain a CGPA of 9.5",
+    cardDetailedText:
+      "As a student at KJ Somaiya College of Engineering, I maintained a CGPA of 9.5 while excelling in core subjects like Data Structures, Algorithms, and Operating Systems. My academic journey involved rigorous coursework, project-based learning, and active participation in technical events.",
+  },
+  {
+    title: "Rao Junior College of Science (HSC)",
+    cardTitle: "Student",
+    cardSubtitle:
+      "Studied Core Subjects like Physics, Chemistry, Mathematics, and Computer Science. Maintain a Percentage of 95.17%",
+    cardDetailedText:
+      "At Rao Junior College of Science, I achieved a percentage of 95.17% by excelling in core subjects such as Physics, Chemistry, Mathematics, and Computer Science. My academic dedication was reflected in my consistent performance and participation in various science competitions.",
+  },
+  {
+    title: "Podar International School (CBSE), Seawoods Navi Mumbai",
+    cardTitle: "Student",
+    cardSubtitle:
+      "Studied Core Subjects like English, Mathematics, Science, Social Studies, and Computer Science. Maintained a Percentage of 90%",
+    cardDetailedText:
+      "During my time at Podar International School, I maintained a percentage of 90%, excelling in subjects such as English, Mathematics, Science, and Social Studies. My well-rounded education laid a strong foundation for my future academic and professional endeavors.",
+  },
+];
+

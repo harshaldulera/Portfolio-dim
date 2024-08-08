@@ -84,18 +84,59 @@
   }
 }
 
-.bg-hero {
+/* .bg-hero {
   background-image: url('../../public/hero1.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
+} */
 
-.moving {
+/* .moving {
   background-image: url('../../public/about-me.jpg');
   background-size: cover;
   transition: all 0.8s ease-in-out;
   width: 100%;
   height: 90vh;
+} */
+
+.my-card {
+  background-color: transparent !important;
+  padding: 10px;
+  border-radius: 10px;
 }
 
+.my-card-subtitle , .my-card-text , .TimelineContentDetails-sc-d7qjm1-5 , .SelecterLabel-sc-168kw5q-4 {
+  color: white !important;
+}
+
+.my-title {
+  font-size: 20px !important;
+}
+
+.TriangleIconWrapper-sc-d7qjm1-11{
+  display: none !important;
+}
+
+.ToolbarWrapper-sc-exupb5-0{
+  background-color: transparent !important;
+  color: white !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.Shape-sc-18iuiou-3{
+  border: 2px solid gray !important;
+}
+
+.TimelinePointWrapper-sc-12rz3g8-0 {
+  background-color: transparent !important;
+}
+
+.TimelineNavWrapper-sc-1apb8f9-0 , .Selecter-sc-168kw5q-2{
+  background-color: transparent !important;
+}
+
+.TimelinePointWrapper-sc-12rz3g8-0::after , .TimelinePointWrapper-sc-12rz3g8-0::before{
+  background-color: gray !important;
+}

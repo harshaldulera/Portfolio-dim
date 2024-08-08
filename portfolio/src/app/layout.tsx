@@ -4,6 +4,7 @@ import Navbar from "@/globals/navbar/Navbar";
 import "./globals.css";
 import { navbar } from "@/data/data";
 import { Poppins } from "next/font/google";
+import Starfield from "@/globals/StarField";
 
 const poppins = Poppins({
   weight: "400",
@@ -23,6 +24,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppins.className}>
+        <Starfield
+          starCount={10000}
+          starColor={[255, 255, 255]}
+          speedFactor={0.05}
+          backgroundColor="black"
+        />
         <Navbar
           logo={navbar.logo}
           title={navbar.title}
@@ -30,12 +37,6 @@ export default function RootLayout({
           name={navbar.name}
         />
         {children}
-        <Navbar
-          logo={navbar.logo}
-          title={navbar.title}
-          links={navbar.links}
-          name={navbar.name}
-        />
       </body>
     </html>
   );

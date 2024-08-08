@@ -22,7 +22,7 @@ export const Heading = (props: HeadingProps) => (
 );
 
 export const Skill = (props: SkillProps) => (
-  <div className="flex transition-all ease-in-out duration-500 flex-col items-center text-white justify-center gap-3 px-10 py-6 rounded-3xl hover:text-blue-900 hover:bg-blue-200">
+  <div className="flex transition-all ease-in-out duration-500 flex-col items-center text-white justify-center gap-3 px-10 py-6 rounded-3xl hover:text-white hover:bg-blue-900">
     <Image src={props.image} alt="Skill" width={100} height={100} />
     <p className="text-2xl">{props.name}</p>
   </div>
@@ -61,10 +61,10 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <div className="flex flex-col p-10 my-10 align-center items-center justify-center">
+      <div className="flex flex-col p-10 my-10 items-center justify-center">
         <Heading title="My Top Projects" image="/portal.svg" />
-        <div className="grid w-full my-10 lg:grid-cols-2 md:grid-cols-1 gap-10">
-          {projects.map((project) => (
+        <div className="w-full my-10 flex gap-10 xl:flex-nowrap sm:flex-wrap items-start">
+          {projects.map((project,index) => (
             <ProjectCard
               key={project.name}
               name={project.name}
@@ -129,7 +129,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <p className="text-center text-3xl text-white">Thanks for scrolling</p>
+      <p className="text-center text-3xl text-white py-10">Thanks for scrolling</p>
     </div>
   );
 }
