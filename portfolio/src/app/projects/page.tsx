@@ -1,23 +1,41 @@
+"use client";
 import React from "react";
 import Heading from "@/globals/Heading";
 import { ProjectCard } from "@/globals/project-card/ProjectCard";
 import { projects } from "@/data/data";
+import { motion } from "framer-motion";
+
 export default function Projects() {
   return (
-    <div className="flex flex-col items-center mt-10">
+    <div className="flex flex-col items-center mt-10 lg:p-0 p-3">
       <Heading title="My Top Projects" image="/portal.svg" />
-      <div className="w-full my-10 flex gap-10 xl:flex-nowrap sm:flex-wrap items-start">
+      <motion.div
+        className="w-full my-10 flex gap-10 lg:flex-nowrap flex-wrap lg:items-start items-center p-5 lg:justify-between justify-center"
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: { opacity: 0 },
+          visible: { opacity: 1, transition: { staggerChildren: 0.3 } },
+        }}
+      >
         {projects.map((project, index) => (
-          <ProjectCard
-            key={project.name}
-            name={project.name}
-            image={project.image}
-            github={project.github}
-            hosted_link={project.hosted_link}
-            description={project.description}
-          />
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <ProjectCard
+              key={project.name}
+              name={project.name}
+              image={project.image}
+              github={project.github}
+              hosted_link={project.hosted_link}
+              description={project.description}
+            />
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 }

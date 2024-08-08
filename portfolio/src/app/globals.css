@@ -41,6 +41,8 @@
     height: 100%;
     margin: 0;
     padding: 0;
+    letter-spacing: 1px !important;
+    line-height: 1.5;
   }
 
   .dark {
@@ -123,6 +125,10 @@
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
+}
+.lucide-x {
+  color: white !important;
+  border: none;
 }
 
 .Shape-sc-18iuiou-3{

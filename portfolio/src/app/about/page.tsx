@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import Heading from "@/globals/Heading";
 import { about, aboutLinks } from "@/data/data";
 import Link from "next/link";
@@ -18,39 +18,65 @@ const AboutComponent = ({
   index,
 }: AboutProps & { index: number }) => {
   return (
-    <div className="flex flex-col justify-center items-start lg:p-24 p-10 w-full my-10 lg:gap-10 gap-5 lg:text-start text-center">
+    <motion.div
+      className="flex flex-col justify-center lg:items-start items-center md:text-center lg:p-24 p-10 w-full my-10 lg:gap-10 gap-5 lg:text-start text-center"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: index * 0.3 }}
+      viewport={{ once: true }}
+    >
       <Heading title={heading} image="/portal.svg" />
       <div
-        className={`flex justify-between items-center lg:flex-nowrap flex-wrap w-full ${
+        className={`flex lg:justify-between justify-center gap-10 items-center lg:flex-nowrap flex-wrap w-full ${
           index % 2 === 0 ? "flex-row" : "flex-row-reverse"
         }`}
       >
-        <span className="text-2xl max-w-[900px] text-white mt-5 leading-loose">
+        <span className="leading-relaxed lg:text-2xl text-lg max-w-[900px] text-white mt-5 leading-loose">
           {desc}
         </span>
         <Image src={image} alt={heading} width={500} height={500} />
       </div>
-    </div>
+    </motion.div>
   );
 };
+
 export default function AboutMe() {
   return (
     <div className="w-full">
       <div className="flex flex-col justify-start py-10 items-center gap-10 moving">
-        <Image
-          src="/me.png"
-          alt="Profile"
-          width={300}
-          height={300}
-          className="rounded-full"
-        />
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
+          <Image
+            src="/me.png"
+            alt="Profile"
+            width={300}
+            height={300}
+            className="rounded-full"
+          />
+        </motion.div>
         <div className="flex flex-col justify-center items-center px-10">
-          <span className="lg:text-3xl  text-xl text-white mt-5 text-center">
-            Hi, Im Aarya Tiwari, a passionate Software Developer
-          </span>
-          <span className="lg:text-3xl text-xl text-white mt-5 text-center">
+          <motion.span
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="lg:text-3xl text-xl text-white mt-5 text-center"
+          >
+            Hi, I'm Aarya Tiwari, a passionate Software Developer
+          </motion.span>
+          <motion.span
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+            viewport={{ once: true }}
+            className="lg:text-3xl text-xl text-white mt-5 text-center"
+          >
             and Full-Stack Developer.
-          </span>
+          </motion.span>
         </div>
       </div>
       {about.map((about, index) => (
@@ -64,10 +90,23 @@ export default function AboutMe() {
       ))}
       <div className="flex flex-col lg:p-24 p-10 gap-10 items-center">
         <Heading title="Contact Me" image="/portal.svg" />
-        <div className="flex w-full justify-evenly gap-10 flex-wrap">
+        <motion.div
+          className="flex w-full justify-evenly gap-10 flex-wrap"
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: { opacity: 0 },
+            visible: { opacity: 1, transition: { staggerChildren: 0.2 } },
+          }}
+          viewport={{ once: true }}
+        >
           {aboutLinks.map((link, index) => (
-            <div
+            <motion.div
               key={index}
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
+              viewport={{ once: true }}
               className="flex flex-col justify-center items-center gap-3"
             >
               <Link href={link.link} onClick={link.click}>
@@ -79,9 +118,9 @@ export default function AboutMe() {
                 />
               </Link>
               <span className="text-2xl text-white">{link.name}</span>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   );

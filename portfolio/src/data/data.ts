@@ -201,6 +201,22 @@ export const projects = [
     description:
       "File-Nest offers a wide range of features including file sharing in organizations , file storage and access control for many supported file extensions like PDF , DOCX , Images , CSV etc.",
   },
+  {
+    name: "My Portfolio",
+    image: "/filenest.png",
+    github: "https://github.com/AaryaTiwari1211/file-nest",
+    hosted_link: "file-next-five.vercel.app",
+    description:
+      "File-Nest offers a wide range of features including file sharing in organizations , file storage and access control for many supported file extensions like PDF , DOCX , Images , CSV etc.",
+  },
+  {
+    name: "File Nest : The Next Gen File Manager",
+    image: "/filenest.png",
+    github: "https://github.com/AaryaTiwari1211/file-nest",
+    hosted_link: "file-next-five.vercel.app",
+    description:
+      "File-Nest offers a wide range of features including file sharing in organizations , file storage and access control for many supported file extensions like PDF , DOCX , Images , CSV etc.",
+  },
 ];
 
 export const clients = [
@@ -274,7 +290,7 @@ export const aboutLinks = [
   },
   {
     name: "Resume",
-    link: "/",
+    link: "/about",
     image: "/socials/resume.svg",
     click: onButtonClick,
   },
