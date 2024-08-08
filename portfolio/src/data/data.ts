@@ -204,7 +204,7 @@ export const projects = [
     name: "My Portfolio",
     image: "/portfolio.png",
     github: "https://github.com/AaryaTiwari1211/Portfolio",
-    hosted_link: "aarya-tiwari1211.vercel.app",
+    hosted_link: "https://aarya-tiwari1211.vercel.app",
     description:
       "This is my personal portfolio website, showcasing my projects, skills, and experiences as a Software and Full-Stack Developer.",
   },
@@ -212,7 +212,7 @@ export const projects = [
     name: "Interactive Quiz Hub - Quizio",
     image: "/quizio.png",
     github: "https://github.com/AaryaTiwari1211/Quiz-App-React",
-    hosted_link: "quizio-aari.vercel.app",
+    hosted_link: "https://quizio-aari.vercel.app",
     description:
       "Quizio is an interactive quiz platform built with React, offering users a dynamic and engaging quiz experience.",
   },
@@ -220,7 +220,7 @@ export const projects = [
     name: "Electra Enterprises - Website",
     image: "/electra.png",
     github: "https://github.com/AaryaTiwari1211/Electra_Website",
-    hosted_link: "electra-main.netlify.app",
+    hosted_link: "https://electra-main.netlify.app",
     description:
       "This is the official website for Electra Enterprises, featuring information about their products and services in the electronics industry.",
   },

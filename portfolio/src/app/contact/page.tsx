@@ -14,7 +14,7 @@ import { motion } from "framer-motion";
 
 export default function ContactMe() {
   return (
-    <div className="w-full flex justify-center items-center my-10">
+    <div className="w-full flex justify-center items-center my-10 lg:p-0 p-3">
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
