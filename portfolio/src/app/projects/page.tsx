@@ -1,5 +1,5 @@
 import React from "react";
-import { Heading } from "../page";
+import Heading from "@/globals/Heading";
 import { ProjectCard } from "@/globals/project-card/ProjectCard";
 import { projects } from "@/data/data";
 export default function Projects() {
