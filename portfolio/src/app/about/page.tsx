@@ -46,7 +46,7 @@ export default function AboutMe() {
         />
         <div className="flex flex-col justify-center items-center px-10">
           <span className="lg:text-3xl  text-xl text-white mt-5 text-center">
-            Hi, I'm Aarya Tiwari, a passionate Software Developer
+            Hi, Im Aarya Tiwari, a passionate Software Developer
           </span>
           <span className="lg:text-3xl text-xl text-white mt-5 text-center">
             and Full-Stack Developer.
