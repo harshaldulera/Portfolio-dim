@@ -15,7 +15,7 @@ interface ProjectProps {
   name: string;
   image: string;
   github: string;
-  hosted_link: string;
+  hosted_link: string | undefined;
   description: string;
 }
 
@@ -30,12 +30,15 @@ export const ProjectCard = (props: ProjectProps) => {
           <Link href={props.github} target="_blank" rel="noopener noreferrer">
             <Github size={36} />
           </Link>
-          <Link href={props.hosted_link} target="_blank" rel="noopener noreferrer">
-            <LinkIcon size={36} />
-          </Link>
+          {
+            !props.hosted_link ? null : (
+              <Link href={props.hosted_link} target="_blank" rel="noopener noreferrer">
+                <MoveUpRight size={36} />
+              </Link>
+            )
+          }
         </div>
         <CardHeader className="m-0 p-0 w-full">
-          <Link href={props.hosted_link}>
             <Image
               src={props.image}
               className="rounded-t-3xl transition-opacity duration-300"
@@ -44,7 +47,6 @@ export const ProjectCard = (props: ProjectProps) => {
               height={400}
               style={{ opacity: hovered ? 0.5 : 1 }}
             />
-          </Link>
         </CardHeader>
         <CardContent className="text-white text-2xl m-1 px-4 py-4">
           <p>{props.name}</p>

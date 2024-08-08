@@ -224,6 +224,13 @@ export const projects = [
     description:
       "This is the official website for Electra Enterprises, featuring information about their products and services in the electronics industry.",
   },
+  {
+    name: "Paatshala - The Online Help Platform for Teachers",
+    image: "/paathshala.jpeg",
+    github: "https://github.com/kartikm7/team-ventures-devopia",
+    description:
+      "Paatshala is an online platform designed to assist teachers with various resources, tools, and support to enhance their teaching experience and manage their classes more effectively.",
+  }
 ];
 
 
