@@ -1,8 +1,9 @@
 "use client";
 
 import React from "react";
-import { Chrono } from "react-chrono";
+import { Chrono } from "@/globals/react-chrono-client";
 import { experience } from "@/data/data";
+
 
 export default function Timeline() {
   return (
