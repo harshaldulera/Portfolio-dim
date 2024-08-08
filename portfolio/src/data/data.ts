@@ -203,15 +203,15 @@ export const projects = [
   },
   {
     name: "My Portfolio",
-    image: "/filenest.png",
+    image: "/portfolio.png",
     github: "https://github.com/AaryaTiwari1211/file-nest",
-    hosted_link: "file-next-five.vercel.app",
+    hosted_link: "aarya-tiwari1211.vercel.app",
     description:
       "File-Nest offers a wide range of features including file sharing in organizations , file storage and access control for many supported file extensions like PDF , DOCX , Images , CSV etc.",
   },
   {
-    name: "File Nest : The Next Gen File Manager",
-    image: "/filenest.png",
+    name: "Interactive Quiz Hub - Quizio",
+    image: "/quizio.png",
     github: "https://github.com/AaryaTiwari1211/file-nest",
     hosted_link: "file-next-five.vercel.app",
     description:
