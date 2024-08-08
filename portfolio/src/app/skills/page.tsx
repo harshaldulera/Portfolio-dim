@@ -1,15 +1,9 @@
 import React from "react";
-import { Heading } from "../page";
+import Heading from "@/globals/Heading";
 import Link from "next/link";
 import { skills } from "@/data/data";
-import { Skill } from "../page";
-
-export interface SkillProps {
-  name: string;
-  type: string;
-  image: string;
-  link: string;
-}
+import Skill from "@/globals/Skill";
+import { SkillProps } from "@/globals/Skill";
 
 export default function Skills() {
   function filterSkills(skills: SkillProps[], data: string) {

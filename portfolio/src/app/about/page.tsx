@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { Heading } from "../page";
+import Heading from "@/globals/Heading";
 import { about, aboutLinks } from "@/data/data";
 import Link from "next/link";
 

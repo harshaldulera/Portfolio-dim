@@ -7,26 +7,8 @@ import { ProjectCard } from "@/globals/project-card/ProjectCard";
 import { projects } from "@/data/data";
 import { ClientCard } from "@/globals/client-card/ClientCard";
 import { clients } from "@/data/data";
-import { SkillProps } from "./skills/page";
-
-interface HeadingProps {
-  title: string;
-  image: any;
-}
-
-export const Heading = (props: HeadingProps) => (
-  <div className="flex items-center gap-5">
-    <h1 className="text-4xl text-white">{props.title}</h1>
-    <Image src={props.image} alt={props.title} width={40} height={40} />
-  </div>
-);
-
-export const Skill = (props: SkillProps) => (
-  <div className="flex transition-all ease-in-out duration-500 flex-col items-center text-white justify-center gap-3 px-10 py-6 rounded-3xl hover:text-white hover:bg-blue-900">
-    <Image src={props.image} alt="Skill" width={100} height={100} />
-    <p className="text-2xl">{props.name}</p>
-  </div>
-);
+import Heading from "@/globals/Heading";
+import Skill from "@/globals/Skill";
 
 export default function Home() {
   return (
