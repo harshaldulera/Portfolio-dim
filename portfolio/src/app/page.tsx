@@ -175,7 +175,7 @@ export default function Home() {
               Wanna Hire Me?
             </h1>
             <p className="text-white lg:text-lg text-md lg:text-start text-center">
-              I am available for hire. Let's work together and make something great.
+              I am available for hire. Let us work together and make something great.
             </p>
             <CustomButton
               innerClassName="flex items-center w-full h-full p-3"
