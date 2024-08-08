@@ -17,7 +17,7 @@ export default function Home() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="bg-hero w-full h-screen text-white flex justify-center items-center flex-col gap-10"
+        className="bg-hero w-full h-[90vh] text-white flex justify-center items-center flex-col gap-10"
       >
         <motion.h1
           initial={{ y: -50, opacity: 0 }}

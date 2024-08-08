@@ -72,7 +72,6 @@ export default function Navbar(props: NavbarProps) {
     <div className="relative bg-transparent w-full py-6 px-12 flex justify-between items-center gap-24">
       <div className="flex gap-2 items-center">
         <Image src={props.logo} alt={props.title} width={25} height={25} />
-        <h1 className="text-white">{props.name}</h1>
       </div>
       {isMobile ? (
         <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
