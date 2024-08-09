@@ -180,7 +180,7 @@ export const projects = [
     name: "Sahyog - A Refined Healthcare Associate",
     image: "/sahyog.png",
     github: "https://github.com/AaryaTiwari1211/Sahyog_Healthcare",
-    hosted_link: "sahyog-healthcare.vercel.app",
+    hosted_link: "https://sahyog-healthcare.vercel.app",
     description:
       "SAHYOG is a decentralized healthcare ecosystem in India, offering a unique health identity card, AI-driven consultations, task management, emergency SOS, and blockchain security for user data protection.",
   },
