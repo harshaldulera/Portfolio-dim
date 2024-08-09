@@ -11,8 +11,39 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
+import { useToast } from "@/components/ui/use-toast";
+import { useState } from "react";
 
 export default function ContactMe() {
+  const { toast } = useToast();
+  const router = useRouter();
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const handleChange = (e: any) => {
+    setForm((prev) => ({ ...prev, [e.target.id]: e.target.value }));
+  };
+  const handleSubmit = () => {
+    console.log("Form Data: ", form);
+    if (!form.name || !form.email || !form.subject || !form.message) {
+      return toast({
+        title: "Error",
+        description: "Please fill out all the fields",
+        className: "bg-red-500 text-white border-none",
+      });
+    } else {
+      toast({
+        title: "Message sent",
+        description: "I'll get back to you as soon as possible.",
+        className: "bg-black text-white border-none",
+      });
+      router.push("/");
+    }
+  };
   return (
     <div className="w-full flex justify-center items-center my-10 lg:p-0 p-3">
       <motion.div
@@ -38,11 +69,15 @@ export default function ContactMe() {
               transition={{ duration: 0.5 }}
               className="space-y-2"
             >
-              <Label className="text-white" htmlFor="name">Name</Label>
+              <Label className="text-white" htmlFor="name">
+                Name
+              </Label>
               <Input
                 id="name"
                 className="bg-transparent text-white border-gray-600"
                 placeholder="Enter your name"
+                value={form.name}
+                onChange={handleChange}
               />
             </motion.div>
             <motion.div
@@ -51,12 +86,16 @@ export default function ContactMe() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="space-y-2"
             >
-              <Label className="text-white" htmlFor="email">Email</Label>
+              <Label className="text-white" htmlFor="email">
+                Email
+              </Label>
               <Input
                 id="email"
                 className="bg-transparent text-white border-gray-600"
                 placeholder="Enter your email"
                 type="email"
+                value={form.email}
+                onChange={handleChange}
               />
             </motion.div>
             <motion.div
@@ -65,11 +104,15 @@ export default function ContactMe() {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="space-y-2"
             >
-              <Label className="text-white" htmlFor="subject">Subject</Label>
+              <Label className="text-white" htmlFor="subject">
+                Subject
+              </Label>
               <Input
                 id="subject"
                 className="bg-transparent text-white border-gray-600"
                 placeholder="Enter the subject"
+                value={form.subject}
+                onChange={handleChange}
               />
             </motion.div>
             <motion.div
@@ -78,11 +121,15 @@ export default function ContactMe() {
               transition={{ duration: 0.5, delay: 0.6 }}
               className="space-y-2"
             >
-              <Label className="text-white" htmlFor="message">Message</Label>
+              <Label className="text-white" htmlFor="message">
+                Message
+              </Label>
               <Textarea
                 id="message"
                 placeholder="Enter your message"
                 className="min-h-[100px] bg-transparent text-white border-gray-600"
+                value={form.message}
+                onChange={handleChange}
               />
             </motion.div>
             <motion.div
@@ -90,7 +137,10 @@ export default function ContactMe() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.8 }}
             >
-              <Button className="hover:bg-white hover:text-black">
+              <Button
+                className="hover:bg-white hover:text-black"
+                onClick={handleSubmit}
+              >
                 Send message
               </Button>
             </motion.div>

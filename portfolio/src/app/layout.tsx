@@ -5,6 +5,7 @@ import "./globals.css";
 import { navbar } from "@/data/data";
 import { Poppins } from "next/font/google";
 import Starfield from "@/globals/StarField";
+import { Toaster } from "@/components/ui/toaster"
 
 const poppins = Poppins({
   weight: "400",
@@ -25,7 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={poppins.className}>
         <Starfield
-          starCount={10000}
+          starCount={2000}
           starColor={[255, 255, 255]}
           speedFactor={0.05}
           backgroundColor="black"
@@ -37,6 +38,7 @@ export default function RootLayout({
           name={navbar.name}
         />
         {children}
+        <Toaster />
       </body>
     </html>
   );

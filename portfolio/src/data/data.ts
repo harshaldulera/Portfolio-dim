@@ -269,12 +269,12 @@ export const about = [
   },
   {
     heading: "My Love for Coding and Development",
-    desc: "My fascination with coding began in high school when I created a simple game as a class project. This initial spark ignited a passion for solving complex problems and bringing ideas to life through code. Over the years, I've honed my skills in languages like Python, JavaScript, and C++. I'm particularly drawn to full-stack development, where I can integrate both front-end creativity and back-end logic to build comprehensive applications. The ability to continuously learn and innovate keeps me excited about my coding journey.",
+    desc: "My fascination with coding began in high school when I created a simple game as a class project. This initial spark ignited a passion for solving complex problems and bringing ideas to life through code. Over the years, I've honed my skills in languages like Python, JavaScript, and C++. I'm particularly drawn to full-stack development, where I can integrate both front-end creativity and back-end logic to build comprehensive applications. The ability to continuously learn and innovate keeps me excited about my coding journey. In addition to development, solving Leetcode problems and making projects have become integral parts of my growth as a developer.",
     image: "/about1.jpg",
   },
   {
     heading: "My Interests and Hobbies",
-    desc: "Beyond the world of code, I find myself captivated by photography, music, and hiking. These pursuits allow me to explore creative outlets, capture moments, and connect with nature, maintaining a healthy work-life balance. In some ways, my hobbies even influence my coding journey by fostering problem-solving skills and inspiring creative projects. For instance, my interest in photography has led me to develop image processing applications, blending my passion with my technical skills.",
+    desc: "Beyond the world of code, I find myself captivated by watching anime, playing chess, playing badminton, listening to music, photography, and hiking. These pursuits allow me to explore creative outlets, capture moments, and connect with nature, maintaining a healthy work-life balance. In some ways, my hobbies even influence my coding journey by fostering problem-solving skills and inspiring creative projects. For instance, my interest in photography has led me to develop image processing applications, blending my passion with my technical skills.",
     image: "/about1.jpg",
   },
 
@@ -289,6 +289,7 @@ export const about = [
     image: "/about1.jpg",
   },
 ];
+
 
 export const aboutLinks = [
   {
