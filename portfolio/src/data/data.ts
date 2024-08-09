@@ -196,7 +196,7 @@ export const projects = [
     name: "File Nest : The Next Gen File Manager",
     image: "/filenest.png",
     github: "https://github.com/AaryaTiwari1211/file-nest",
-    hosted_link: "file-next-five.vercel.app",
+    hosted_link: "https://file-next-five.vercel.app",
     description:
       "File-Nest offers a comprehensive solution for file management, including file sharing within organizations, secure storage, and access control for various file types like PDFs, DOCX, images, and CSVs.",
   },
