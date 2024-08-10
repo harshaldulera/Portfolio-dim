@@ -113,7 +113,7 @@ export default function Home() {
           ))}
         </motion.div>
         <div className="flex justify-end w-full mt-5">
-          <Link href="/skills">
+          <Link href="/projects">
             <p className="underline text-white text-xl self-end">
               View All Projects
             </p>
