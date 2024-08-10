@@ -13,7 +13,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-
+import { useRouter } from "next/navigation";
 export interface NavbarProps {
   logo: string;
   title: string;
@@ -25,6 +25,7 @@ interface ButtonProps {
   innerClassName: string;
   outerClassName: string;
   title: string;
+  href: string | undefined;
 }
 
 function useMediaQuery(query: string): boolean {
@@ -48,17 +49,25 @@ function useMediaQuery(query: string): boolean {
   return matches;
 }
 
-export const CustomButton = (props: ButtonProps) => (
-  <div
-    className={`rounded-3xl p-px transition-all duration-400 ease-in-out bg-gradient-to-r from-yellow-200 via-red-200 to-red-200 flex justify-center items-center hover:bg-gradient-to-l ${props.outerClassName}`}
-  >
-    <Button
-      className={`rounded-3xl transition-all duration-1000 ease-in-out bg-gradient-to-r from-blue-200 via-red-200 to-yellow-200 text-black hover:bg-gradient-to-l ${props.innerClassName}`}
+export const CustomButton = (props: ButtonProps) => {
+  const router = useRouter();
+  return (
+    <div
+      onClick={() => {
+        if (props.href) {
+          router.push(props.href);
+        }
+      }}
+      className={`rounded-3xl p-px transition-all duration-400 ease-in-out bg-gradient-to-r from-yellow-200 via-red-200 to-red-200 flex justify-center items-center hover:bg-gradient-to-l ${props.outerClassName}`}
     >
-      {props.title}
-    </Button>
-  </div>
-);
+      <Button
+        className={`rounded-3xl transition-all duration-1000 ease-in-out bg-gradient-to-r from-blue-200 via-red-200 to-yellow-200 text-black hover:bg-gradient-to-l ${props.innerClassName}`}
+      >
+        {props.title}
+      </Button>
+    </div>
+  );
+};
 
 export default function Navbar(props: NavbarProps) {
   const isMobile = useMediaQuery("(max-width: 1024px)");
@@ -78,9 +87,14 @@ export default function Navbar(props: NavbarProps) {
           <SheetTrigger>
             <Menu size={40} color="#FFFFFF" />
           </SheetTrigger>
-          <SheetContent className="w-[300px] sm:w-[540px] bg-black border-none" side="left">
+          <SheetContent
+            className="w-[300px] sm:w-[540px] bg-black border-none"
+            side="left"
+          >
             <SheetHeader>
-              <SheetTitle className="text-white">Welcome to My Portfolio</SheetTitle>
+              <SheetTitle className="text-white">
+                Welcome to My Portfolio
+              </SheetTitle>
               <div className="w-full"></div>
               <SheetDescription className="flex flex-col gap-10">
                 <span className="w-full h-10"></span>

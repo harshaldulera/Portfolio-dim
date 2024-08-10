@@ -40,7 +40,7 @@ export default function Home() {
           animate={{ scale: 1 }}
           transition={{ duration: 1, delay: 1 }}
         >
-          <CustomButton innerClassName="" outerClassName="" title="Hire Me" />
+          <CustomButton innerClassName="" outerClassName="" title="Hire Me" href="/contact" />
         </motion.div>
       </motion.div>
 
@@ -181,6 +181,7 @@ export default function Home() {
               innerClassName="flex items-center w-full h-full p-3"
               outerClassName="w-48 h-full"
               title="Send Me a Message"
+              href="/contact"
             />
           </motion.div>
 
