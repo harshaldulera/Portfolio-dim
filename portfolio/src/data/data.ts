@@ -225,14 +225,29 @@ export const projects = [
       "This is the official website for Electra Enterprises, featuring information about their products and services in the electronics industry.",
   },
   {
+    name: "Sraj - Indian Traditional Fashion & Jewellery Store",
+    image: "/sraj.png",
+    hosted_link: "https://sraj.vercel.app/",
+    github: "https://github.com/AaryaTiwari1211/SRAJ",
+    description:
+      "Sraj is an eCommerce platform dedicated to offering a curated selection of Indian traditional attire and jewellery. Browse through a diverse range of Sarees, Kurtis, Lehengas, Nightwear, Jewellery, and Bedsheets, designed to bring elegance and cultural charm to your wardrobe.",
+  },
+  {
     name: "Paatshala - The Online Help Platform for Teachers",
     image: "/paathshala.jpeg",
     github: "https://github.com/kartikm7/team-ventures-devopia",
     description:
       "Paatshala is an online platform designed to assist teachers with various resources, tools, and support to enhance their teaching experience and manage their classes more effectively.",
-  }
+  },
+  {
+    name: "Fitera - The Only Motivation for Fitness",
+    image: "/fitera.png",
+    github: "https://github.com/AaryaTiwari1211/Fitera_The_Fitness_Guide",
+    hosted_link: "https://fitera-the-fitness-guide.vercel.app/",
+    description:
+      "Fitera is a fitness platform that offers personalized workout plans, diet recommendations, and motivational content to help users achieve their fitness goals.",
+  },
 ];
-
 
 export const clients = [
   {
@@ -289,7 +304,6 @@ export const about = [
     image: "/about1.jpg",
   },
 ];
-
 
 export const aboutLinks = [
   {
@@ -376,4 +390,3 @@ export const experience = [
       "During my time at Podar International School, I maintained a percentage of 90%, excelling in subjects such as English, Mathematics, Science, and Social Studies. My well-rounded education laid a strong foundation for my future academic and professional endeavors.",
   },
 ];
-
