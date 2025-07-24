@@ -278,29 +278,28 @@ export const clients = [
 
 export const about = [
   {
-    heading: "About Me and My College Life",
-    desc: "My college life at KJ Somaiya College of Engineering has been a transformative journey. From day one, I immersed myself in various coding clubs and tech communities, which have significantly shaped my path. Being part of hackathons and coding competitions, I've not only honed my technical skills but also learned the importance of teamwork and perseverance. The vibrant campus life, coupled with the relentless pursuit of knowledge, has equipped me with a well-rounded perspective on both academic and real-world challenges.",
+    heading: "My College Life at KJ Somaiya",
+    desc: "College has been more than just lectures and exams for me — it's where I explored what I really enjoy. From coding clubs and CTFs to late-night project grinds and hackathons, I've picked up skills, met like-minded people, and figured out what drives me. While I started off leaning into software development, over time I found myself more drawn to markets, systems thinking, and building things on my own terms.",
     image: "/about1.jpg",
   },
   {
-    heading: "My Love for Coding and Development",
-    desc: "My fascination with coding began in high school when I created a simple game as a class project. This initial spark ignited a passion for solving complex problems and bringing ideas to life through code. Over the years, I've honed my skills in languages like Python, JavaScript, and C++. I'm particularly drawn to full-stack development, where I can integrate both front-end creativity and back-end logic to build comprehensive applications. The ability to continuously learn and innovate keeps me excited about my coding journey. In addition to development, solving Leetcode problems and making projects have become integral parts of my growth as a developer.",
+    heading: "How I Got into Tech",
+    desc: "My entry into tech was pretty organic — I started with basic C++ and ended up building full-stack apps and tools for hackathons. I've worked with React, Next.js, Flask, Hasura, and more, but what really stuck with me was how fast you can build and ship things that matter. Coding gave me confidence and problem-solving muscle, which later translated really well into how I approach trading and systems now.",
     image: "/about1.jpg",
   },
   {
-    heading: "My Interests and Hobbies",
-    desc: "Beyond the world of code, I find myself captivated by watching anime, playing chess, playing badminton, listening to music, photography, and hiking. These pursuits allow me to explore creative outlets, capture moments, and connect with nature, maintaining a healthy work-life balance. In some ways, my hobbies even influence my coding journey by fostering problem-solving skills and inspiring creative projects. For instance, my interest in photography has led me to develop image processing applications, blending my passion with my technical skills.",
-    image: "/about1.jpg",
-  },
-
-  {
-    heading: "My Future Ambitions",
-    desc: "Looking ahead, I aspire to become a leading software engineer, contributing to innovative projects that make a difference. I aim to specialize in artificial intelligence and machine learning, areas that I believe hold the potential to revolutionize industries and improve lives. My ultimate goal is to create technologies that not only solve problems but also inspire and empower others. Additionally, I plan to continue my education, possibly pursuing a Master's degree, to deepen my knowledge and expertise in these cutting-edge fields.",
+    heading: "Trading: The Path I'm Carving",
+    desc: "Over time, I realized I was more interested in how markets move, why price reacts a certain way, and how systems behave under pressure. I started trading Forex, studied ICT, built journals and models, and got into prop firm challenges. What started as curiosity became a serious pursuit — and now, I see trading not just as a skill, but as a career I want to build long-term. I'm not after quick wins, but consistency and control.",
     image: "/about1.jpg",
   },
   {
-    heading: "Life Outside the Code",
-    desc: "When I'm not immersed in coding challenges, you might find me spending time with loved ones, volunteering for environmental causes, or exploring new cuisines. These experiences allow me to recharge, learn new things, and connect with others, enriching my life beyond the technical realm.",
+    heading: "Outside the Charts and Code",
+    desc: "Outside of screens and keyboards, I enjoy watching anime, photography, hiking, and occasionally crushing a game of chess or badminton. I like things that either calm the mind or challenge it. I've also tried to keep myself open to new ideas — whether it's vlogging, design, or just documenting life. I believe in staying curious and exploring more than one identity.",
+    image: "/about1.jpg",
+  },
+  {
+    heading: "Where I'm Headed",
+    desc: "I'm working towards becoming a consistently profitable trader — ideally working with or building a prop firm of my own someday. I also want to explore global opportunities to deepen my knowledge of finance, possibly through a Master's in the EU or UK. I don't see myself sticking to just one path. Whether it's trading, tech, or entrepreneurship — I want to keep building, learning, and growing on my own terms.",
     image: "/about1.jpg",
   },
 ];
