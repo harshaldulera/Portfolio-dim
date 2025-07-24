@@ -66,7 +66,7 @@ export default function AboutMe() {
             viewport={{ once: true }}
             className="lg:text-3xl text-xl text-white mt-5 text-center"
           >
-            Hi, I am Aarya Tiwari, a passionate Software Developer
+            Hi, I am Harshal Dulera, a passionate FX Trader, Software Engineer
           </motion.span>
           <motion.span
             initial={{ opacity: 0, y: 20 }}
@@ -75,7 +75,7 @@ export default function AboutMe() {
             viewport={{ once: true }}
             className="lg:text-3xl text-xl text-white mt-5 text-center"
           >
-            and Full-Stack Developer.
+            and Cyber Security Researcher.
           </motion.span>
         </div>
       </div>

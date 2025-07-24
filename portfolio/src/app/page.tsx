@@ -25,7 +25,7 @@ export default function Home() {
           transition={{ duration: 1 }}
           className="lg:text-4xl text-2xl hover:text-blue-200 transition-colors duration-300 cursor-pointer text-center"
         >
-          Hi, I am Aarya Tiwari
+          Hi, I am Harshal Dulera
         </motion.h1>
         <motion.span
           initial={{ y: 50, opacity: 0 }}
@@ -33,7 +33,7 @@ export default function Home() {
           transition={{ duration: 1, delay: 0.5 }}
           className="lg:text-2xl text-lg hover:text-blue-200 transition-colors duration-300 cursor-pointer text-center"
         >
-          A passionate Software Engineer and Full-Stack Developer
+          A passionate FX Trader, Software Developer & Cyber Security Researcher
         </motion.span>
         <motion.div
           initial={{ scale: 0 }}
@@ -192,7 +192,7 @@ export default function Home() {
           >
             <Image
               src="/wanna-hire.png"
-              alt="Aarya Tiwari"
+              alt="Harshal Dulera"
               width={400}
               height={400}
             />
