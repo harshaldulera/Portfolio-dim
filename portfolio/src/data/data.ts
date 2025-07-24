@@ -12,7 +12,7 @@ const onButtonClick = () => {
 
 export const navbar = {
   logo: "/logo.svg",
-  title: "Aarya",
+  title: "Harshal",
   links: [
     {
       name: "Home",
@@ -43,8 +43,8 @@ export const navbar = {
 };
 
 export const home = {
-  title: "Aarya",
-  description: "I am a Full Stack Developer",
+  title: "Harshal",
+  description: "I am a FX Trader & Full Stack Developer",
 };
 
 export const skills = [
@@ -308,13 +308,13 @@ export const about = [
 export const aboutLinks = [
   {
     name: "LinkedIn",
-    link: "https://www.linkedin.com/in/aarya-tiwari-142a01224/",
+    link: "https://www.linkedin.com/in/harshaldulera/",
     image: "/socials/linkedin.svg",
     click: () => {},
   },
   {
     name: "GitHub",
-    link: "https://github.com/AaryaTiwari1211",
+    link: "https://github.com/harshaldulera",
     image: "/socials/github.svg",
     click: () => {},
   },
@@ -326,7 +326,7 @@ export const aboutLinks = [
   },
   {
     name: "Email",
-    link: "mailto:aarya.tiwari@somaiya.edu",
+    link: "mailto:harshal.dulera@somaiya.edu",
     image: "/socials/mail.svg",
     click: () => {},
   },
