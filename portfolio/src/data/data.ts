@@ -193,12 +193,12 @@ export const projects = [
       "A high-probability Nasdaq (NQ) intraday trading model based purely on price action, liquidity sweeps, market structure shifts, and narrative timing. The model focuses on internal liquidity, FVGs, breaker blocks, and New York session time windows—eliminating randomness through engineered setups and clean execution zones.",
   },  
   {
-    name: "File Nest : The Next Gen File Manager",
-    image: "/filenest.png",
-    github: "https://github.com/AaryaTiwari1211/file-nest",
-    hosted_link: "https://file-next-five.vercel.app",
+    name: "AdBaba – Aapka Apna Marketing Guru",
+    image: "/adbaba.jpeg",
+    github: "https://github.com/Suja16/adbaba",
+    hosted_link: "",
     description:
-      "File-Nest offers a comprehensive solution for file management, including file sharing within organizations, secure storage, and access control for various file types like PDFs, DOCX, images, and CSVs.",
+    "AdBaba is an AI-powered platform that automates personalized marketing funnels, social media content, and campaign strategy for small businesses and creators. It uses trending memes, AI avatars, and smart targeting to generate high-converting content for platforms like Instagram, Twitter, and YouTube. Built to replace traditional agencies with a cost-effective and time-efficient solution.",
   },
   {
     name: "My Portfolio",
@@ -207,45 +207,6 @@ export const projects = [
     hosted_link: "https://aarya-tiwari1211.vercel.app",
     description:
       "This is my personal portfolio website, showcasing my projects, skills, and experiences as a Software and Full-Stack Developer.",
-  },
-  {
-    name: "Interactive Quiz Hub - Quizio",
-    image: "/quizio.png",
-    github: "https://github.com/AaryaTiwari1211/Quiz-App-React",
-    hosted_link: "https://quizio-aari.vercel.app",
-    description:
-      "Quizio is an interactive quiz platform built with React, offering users a dynamic and engaging quiz experience.",
-  },
-  {
-    name: "Electra Enterprises - Website",
-    image: "/electra.png",
-    github: "https://github.com/AaryaTiwari1211/Electra_Website",
-    hosted_link: "https://electra-main.netlify.app",
-    description:
-      "This is the official website for Electra Enterprises, featuring information about their products and services in the electronics industry.",
-  },
-  {
-    name: "Sraj - Indian Traditional Fashion & Jewellery Store",
-    image: "/sraj.png",
-    hosted_link: "https://sraj.vercel.app/",
-    github: "https://github.com/AaryaTiwari1211/SRAJ",
-    description:
-      "Sraj is an eCommerce platform dedicated to offering a curated selection of Indian traditional attire and jewellery. Browse through a diverse range of Sarees, Kurtis, Lehengas, Nightwear, Jewellery, and Bedsheets, designed to bring elegance and cultural charm to your wardrobe.",
-  },
-  {
-    name: "Paatshala - The Online Help Platform for Teachers",
-    image: "/paathshala.jpeg",
-    github: "https://github.com/kartikm7/team-ventures-devopia",
-    description:
-      "Paatshala is an online platform designed to assist teachers with various resources, tools, and support to enhance their teaching experience and manage their classes more effectively.",
-  },
-  {
-    name: "Fitera - The Only Motivation for Fitness",
-    image: "/fitera.png",
-    github: "https://github.com/AaryaTiwari1211/Fitera_The_Fitness_Guide",
-    hosted_link: "https://fitera-the-fitness-guide.vercel.app/",
-    description:
-      "Fitera is a fitness platform that offers personalized workout plans, diet recommendations, and motivational content to help users achieve their fitness goals.",
   },
 ];
 
