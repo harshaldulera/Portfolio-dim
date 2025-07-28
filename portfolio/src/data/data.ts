@@ -178,7 +178,7 @@ export const skills = [
 export const projects = [
   {
     name: "369 Time Harmonic Model",
-    image: "/369model.png",
+    image: "/369model.jpg",
     github: "", 
     hosted_link: "https://harshal0x01.notion.site/369-time-harmonic-model",
     description:
@@ -186,7 +186,7 @@ export const projects = [
   },
   {
     name: "NQ Intraday Model – Liquidity, Structure & Narrative",
-    image: "/nq-intraday-model.png",
+    image: "/nq-intraday-model.jpg",
     github: "", 
     hosted_link: "https://harshal0x01.notion.site/intraday-model",
     description:
