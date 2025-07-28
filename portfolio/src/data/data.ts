@@ -185,13 +185,13 @@ export const projects = [
       "The 369 Time Harmonic Model is a precision-based trading system that aligns ICT concepts like AMD with Fibonacci Time Zones to predict when moves will happen—not just where. Anchored at the daily open, it helps filter fakeouts, time smart entries using CISD, iFVG, MSS, and forecast market phases based on time rather than price alone.",
   },
   {
-    name: "FileTask-AI : A Powerful Document Chat Bot",
-    image: "/filetask-ai.png",
-    github: "https://github.com/AaryaTiwari1211/filetask-ai",
-    hosted_link: "https://filetask-ai.vercel.app/",
+    name: "NQ Intraday Model – Liquidity, Structure & Narrative",
+    image: "/nq-intraday-model.png",
+    github: "", 
+    hosted_link: "https://harshal0x01.notion.site/intraday-model",
     description:
-      "FileTask AI allows interaction with PDFs, Word documents, and PowerPoint presentations through an AI-powered chat interface.",
-  },
+      "A high-probability Nasdaq (NQ) intraday trading model based purely on price action, liquidity sweeps, market structure shifts, and narrative timing. The model focuses on internal liquidity, FVGs, breaker blocks, and New York session time windows—eliminating randomness through engineered setups and clean execution zones.",
+  },  
   {
     name: "File Nest : The Next Gen File Manager",
     image: "/filenest.png",
