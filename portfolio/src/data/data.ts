@@ -333,59 +333,35 @@ export const aboutLinks = [
 
 export const experience = [
   {
-    title: "Roni Analytics - Remote Mumbai",
-    cardTitle: "Full Stack Development Intern",
-    cardSubtitle:
-      "Worked with real-time data involving Cryptocurrency and developing SQL Queries for fetching related data. Implemented Technologies like PostGresSQL, React TypeScript, Docker, AWS, and more...",
-    cardDetailedText:
-      "During my internship at Roni Analytics, I was responsible for building and optimizing applications that processed real-time cryptocurrency data. I collaborated with the backend team to design efficient SQL queries and leveraged technologies like React TypeScript, Docker, and AWS to deliver scalable solutions.",
-  },
-  {
-    title: "Electra Enterprises",
+    title: "EPT - Global Logistics (Freelance Project)",
     cardTitle: "Frontend Developer",
     cardSubtitle:
-      "Worked on the frontend of the company's website and implemented new features. Implemented Technologies like React, Tailwind CSS, and more...",
+      "Designed and developed a responsive portfolio website for a global logistics company.",
     cardDetailedText:
-      "At Electra Enterprises, I focused on enhancing the user interface of the company's website. I developed and integrated new features using React and Tailwind CSS, ensuring a seamless user experience. My contributions helped in improving site performance and user engagement.",
+      "Worked as a freelance frontend developer for EPT - Global Logistics, a global logistics and supply chain solutions provider. I created a modern, responsive portfolio website to showcase their global operations, service offerings, and case studies. Focused on clean UI/UX, brand alignment, and performance optimization using React. Ensured cross-device compatibility and fast loading speeds for enhanced user experience."
+  },  
+  {
+    title: "DeepCytes",
+    cardTitle: "Cybersecurity Analyst Intern",
+    cardSubtitle:
+      "Worked on offensive security, AI-based threat prediction, and red teaming tool optimization.",
+    cardDetailedText:
+      "From July 2023 to April 2024, I worked as a Cybersecurity Analyst Intern at DeepCytes, where I actively contributed to red teaming initiatives by configuring cloud-based virtual machines with penetration testing tools. I also developed a predictive API powered by a BERT model trained on dark web datasets, enhancing AI-driven threat detection capabilities. Additionally, I conducted in-depth testing and optimization of various red teaming tools to improve operational efficiency and effectiveness."
+  },
+  {
+    title: "Home of Temptations",
+    cardTitle: "Shopify Developer (Freelance)",
+    cardSubtitle:
+      "Developed a custom e-commerce site for a pet food brand using Shopify.",
+    cardDetailedText:
+      "As a freelance Shopify developer, I built a customized online store for Home of Temptations, a premium food brand. The project involved theme customization, product configuration, payment gateway setup, and mobile-first design. Focused on delivering a seamless shopping experience that aligned with the brand’s aesthetic and functionality goals."
   },
   {
     title: "KJ Somaiya College of Engineering",
-    cardTitle: "Full Stack Developer",
-    cardSubtitle:
-      "Developed a Full Stack Application that extracts keywords from a given document, text, or PDF. Implemented Technologies like Django, Django Templates",
-    cardDetailedText:
-      "In this project, I developed a full-stack application for keyword extraction from documents and PDFs. Using Django, I built a robust backend, and Django Templates were used for rendering the frontend. The tool efficiently processed documents and delivered accurate keyword results.",
-  },
-  {
-    title: "RIIDL (Research Innovation Incubation Design Lab)",
-    cardTitle: "Maker Relations Executive",
-    cardSubtitle:
-      "My Role as a Maker Relations Executive included managing the makerspace and helping students with their projects. I also conducted workshops and events for the students. I also invited 35+ makers into the event Maker Mela 2022",
-    cardDetailedText:
-      "As a Maker Relations Executive at RIIDL, I managed the makerspace, provided guidance to students on their projects, and organized workshops to foster innovation. Additionally, I played a key role in coordinating Maker Mela 2022, inviting over 35 makers to showcase their creations.",
-  },
-  {
-    title: "KJ Somaiya College of Engineering",
     cardTitle: "Student",
     cardSubtitle:
-      "Studied Core Subjects like Data Structures and Algorithms, Object Oriented Programming, Database Management Systems, Operating Systems, Computer Networks, and more. Maintain a CGPA of 9.5",
+      "Studied Core Subjects like Data Structures and Algorithms, Object Oriented Programming, Database Management Systems, Operating Systems, Computer Networks, and more.",
     cardDetailedText:
-      "As a student at KJ Somaiya College of Engineering, I maintained a CGPA of 9.5 while excelling in core subjects like Data Structures, Algorithms, and Operating Systems. My academic journey involved rigorous coursework, project-based learning, and active participation in technical events.",
-  },
-  {
-    title: "Rao Junior College of Science (HSC)",
-    cardTitle: "Student",
-    cardSubtitle:
-      "Studied Core Subjects like Physics, Chemistry, Mathematics, and Computer Science. Maintain a Percentage of 95.17%",
-    cardDetailedText:
-      "At Rao Junior College of Science, I achieved a percentage of 95.17% by excelling in core subjects such as Physics, Chemistry, Mathematics, and Computer Science. My academic dedication was reflected in my consistent performance and participation in various science competitions.",
-  },
-  {
-    title: "Podar International School (CBSE), Seawoods Navi Mumbai",
-    cardTitle: "Student",
-    cardSubtitle:
-      "Studied Core Subjects like English, Mathematics, Science, Social Studies, and Computer Science. Maintained a Percentage of 90%",
-    cardDetailedText:
-      "During my time at Podar International School, I maintained a percentage of 90%, excelling in subjects such as English, Mathematics, Science, and Social Studies. My well-rounded education laid a strong foundation for my future academic and professional endeavors.",
+      "Pursuing B.Tech in Information Technology at KJ Somaiya College of Engineering. Gained hands-on experience through projects, hackathons, and coursework in subjects such as Object-Oriented Programming, Operating Systems, DBMS, and Computer Networks. Actively involved in tech clubs and team projects that emphasize real-world problem solving and innovation.",
   },
 ];
