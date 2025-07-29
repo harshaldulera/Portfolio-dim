@@ -1,7 +1,7 @@
 import { link } from "fs";
 
 const onButtonClick = () => {
-  const pdfUrl = "/Aarya_Tiwari.pdf";
+  const pdfUrl = "/Harshal_resume.pdf";
   const link = document.createElement("a");
   link.href = pdfUrl;
   link.download = "Aarya_Tiwari_Resume.pdf";
