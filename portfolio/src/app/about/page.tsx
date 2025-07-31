@@ -53,9 +53,9 @@ export default function AboutMe() {
           <Image
             src="/real-me.JPG"
             alt="Profile"
-            width={150}
+            width={300}
             height={300}
-            className="rounded-full"
+            className="rounded-full object-cover"
           />
         </motion.div>
         <div className="flex flex-col justify-center items-center px-10">
