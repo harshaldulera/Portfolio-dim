@@ -53,7 +53,7 @@ export default function AboutMe() {
           <Image
             src="/real-me.JPG"
             alt="Profile"
-            width={300}
+            width={150}
             height={300}
             className="rounded-full"
           />
