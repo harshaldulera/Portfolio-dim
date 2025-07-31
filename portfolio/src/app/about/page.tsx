@@ -51,7 +51,7 @@ export default function AboutMe() {
           viewport={{ once: true }}
         >
           <Image
-            src="/me.png"
+            src="/real-me.JPG"
             alt="Profile"
             width={300}
             height={300}
