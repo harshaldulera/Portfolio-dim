@@ -39,7 +39,7 @@ export const navbar = {
       link: "contact",
     },
   ],
-  name: "@Aarriiiii",
+  name: "@Harshal0x01",
 };
 
 export const home = {
@@ -214,7 +214,7 @@ export const clients = [
   {
     name: "Client 1",
     position: "Position",
-    image: "/me.png",
+    image: "/real-me.JPG",
     comment: "Comment",
   },
   {
