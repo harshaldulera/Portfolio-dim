@@ -1,3 +1,5 @@
+"use client";
+
 import type { Metadata } from "next";
 import React from "react";
 import Navbar from "@/globals/navbar/Navbar";
@@ -7,11 +9,16 @@ import { Poppins } from "next/font/google";
 import Starfield from "@/globals/StarField";
 import { Toaster } from "@/components/ui/toaster"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { useEffect } from "react";
+import { analytics } from "@/lib/firebase";
+import { logEvent } from "firebase/analytics";
 
 const poppins = Poppins({
   weight: "400",
   subsets: ["latin"],
 });
+
+
 
 export const metadata: Metadata = {
   title: "Harshal Dulera",
@@ -23,6 +30,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  useEffect(() => {
+    if (analytics) {
+      logEvent(analytics, "page_view");
+    }
+  }, []);
   return (
     <html lang="en">
       <body className={poppins.className}>
