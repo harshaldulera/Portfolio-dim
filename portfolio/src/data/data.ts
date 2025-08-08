@@ -326,8 +326,3 @@ export const experience = [
       "Pursuing B.Tech in Information Technology at KJ Somaiya College of Engineering. Gained hands-on experience through projects, hackathons, and coursework in subjects such as Object-Oriented Programming, Operating Systems, DBMS, and Computer Networks. Actively involved in tech clubs and team projects that emphasize real-world problem solving and innovation.",
   },
 ];
-
-
-
-// this is another commit to test branching on github for my experiment
-// please ignore
