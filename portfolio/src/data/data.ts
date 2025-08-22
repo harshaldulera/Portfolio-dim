@@ -4,7 +4,7 @@ const onButtonClick = () => {
   const pdfUrl = "/Harshal_resume.pdf";
   const link = document.createElement("a");
   link.href = pdfUrl;
-  link.download = "Aarya_Tiwari_Resume.pdf";
+  link.download = "Harshal_resume.pdf";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
@@ -241,27 +241,27 @@ export const about = [
   {
     heading: "My College Life at KJ Somaiya",
     desc: "College has been more than just lectures and exams for me — it's where I explored what I really enjoy. From coding clubs and CTFs to late-night project grinds and hackathons, I've picked up skills, met like-minded people, and figured out what drives me. While I started off leaning into software development, over time I found myself more drawn to markets, systems thinking, and building things on my own terms.",
-    image: "/real-me.JPG",
+    image: "/prize.jpg",
   },
   {
     heading: "How I Got into Tech",
     desc: "I got into tech through the world of cybersecurity and ethical hacking. My curiosity led me to platforms like HackTheBox, where I climbed into the top 66 globally. I also secured AIR 4 in the NCIIPC Pentathon, a national-level red teaming competition. Alongside hacking, I began exploring software development — building projects with React, Next.js, Flask, and Hasura. This dual path helped me develop both an attacker’s mindset and a builder’s intuition, shaping how I now approach problems and systems.",
-    image: "/real-me.JPG",
+    image: "/prize.jpg",
   },  
   {
     heading: "Trading: The Path I'm Carving",
     desc: "Over time, I realized I was more interested in how markets move, why price reacts a certain way, and how systems behave under pressure. I started trading Forex, studied ICT, built journals and models, and got into prop firm challenges. What started as curiosity became a serious pursuit — and now, I see trading not just as a skill, but as a career I want to build long-term. I'm not after quick wins, but consistency and control.",
-    image: "/real-me.JPG",
+    image: "/prize.jpg",
   },
   {
     heading: "Outside the Charts and Code",
     desc: "When I’m not deep in charts or buried in code, I enjoy solving cybersecurity challenges, building trading systems, and helping others learn through workshops or content. Music is a big part of my life — it keeps me focused and inspired during long hours of work. I also like exploring new ideas, whether that’s vlogging, designing funnels, or experimenting with bots and automations. For me, curiosity and creativity go hand in hand — I build not just for impact, but for the joy of learning and creating.",
-    image: "/real-me.JPG",
+    image: "/prize.jpg",
   },  
   {
     heading: "Where I'm Headed",
     desc: "I'm working towards becoming a consistently profitable trader — ideally working with or building a prop firm of my own someday. I also want to explore global opportunities to deepen my knowledge of finance, possibly through a Master's in the EU or UK. I don't see myself sticking to just one path. Whether it's trading, tech, or entrepreneurship — I want to keep building, learning, and growing on my own terms.",
-    image: "/real-me.JPG",
+    image: "/prize.jpg",
   },
 ];
 
