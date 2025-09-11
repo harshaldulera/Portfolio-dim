@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getAnalytics, isSupported } from "firebase/analytics";
+import { getAnalytics, isSupported, type Analytics } from "firebase/analytics";
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
   authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
@@ -10,17 +10,23 @@ const firebaseConfig = {
   measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID
 };
 
-// Initialize Firebase
+// Initialize Firebase app (safe on both server and client)
 const app = initializeApp(firebaseConfig);
 
-let analytics: ReturnType<typeof getAnalytics> | null = null;
+// Lazily initialize and cache Analytics only in the browser
+let cachedAnalytics: Analytics | null | undefined;
 
-if(typeof window !== "undefined") {
-  isSupported().then((supported) => {
-    if(supported) {
-      analytics = getAnalytics(app);
-    }
-  });
+export async function getAnalyticsInstance(): Promise<Analytics | null> {
+  if (cachedAnalytics !== undefined) {
+    return cachedAnalytics ?? null;
+  }
+  if (typeof window === "undefined") {
+    cachedAnalytics = null;
+    return null;
+  }
+  const supported = await isSupported().catch(() => false);
+  cachedAnalytics = supported ? getAnalytics(app) : null;
+  return cachedAnalytics;
 }
 
-export {app, analytics};
+export { app };

@@ -10,8 +10,9 @@ import Starfield from "@/globals/StarField";
 import { Toaster } from "@/components/ui/toaster"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { useEffect } from "react";
-import { analytics } from "@/lib/firebase";
+import { getAnalyticsInstance } from "@/lib/firebase";
 import { logEvent } from "firebase/analytics";
+import { usePathname } from "next/navigation";
 
 const poppins = Poppins({
   weight: "400",
@@ -30,11 +31,18 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const pathname = usePathname();
+
   useEffect(() => {
-    if (analytics) {
-      logEvent(analytics, "page_view");
-    }
-  }, []);
+    let isMounted = true;
+    getAnalyticsInstance().then((analytics) => {
+      if (!isMounted || !analytics) return;
+      logEvent(analytics, "page_view", { page_path: pathname || "/" });
+    });
+    return () => {
+      isMounted = false;
+    };
+  }, [pathname]);
   return (
     <html lang="en">
       <body className={poppins.className}>
