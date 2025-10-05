@@ -13,6 +13,7 @@ import { useEffect } from "react";
 import { getAnalyticsInstance } from "@/lib/firebase";
 import { logEvent } from "firebase/analytics";
 import { usePathname } from "next/navigation";
+import Script from "next/script";
 
 const poppins = Poppins({
   weight: "400",
@@ -32,6 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const pathname = usePathname();
+  const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "G-YX34EDN5D5";
 
   useEffect(() => {
     let isMounted = true;
@@ -39,6 +41,11 @@ export default function RootLayout({
       if (!isMounted || !analytics) return;
       logEvent(analytics, "page_view", { page_path: pathname || "/" });
     });
+    if (typeof window !== "undefined" && (window as any).gtag && GA_ID) {
+      (window as any).gtag("config", GA_ID, {
+        page_path: pathname || "/",
+      });
+    }
     return () => {
       isMounted = false;
     };
@@ -46,6 +53,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppins.className}>
+        <Script
+          id="gtag-src"
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_ID}', { page_path: window.location.pathname });
+          `}
+        </Script>
         <Starfield
           starCount={2000}
           starColor={[255, 255, 255]}
